@@ -1,4 +1,5 @@
 # 2.	Write a program to count the total number of digits in a number
+
 num = int(input("Enter a number : "))
 cnt=0
 while(num>0):
