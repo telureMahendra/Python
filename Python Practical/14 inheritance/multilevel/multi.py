@@ -1,8 +1,8 @@
-
+#multilevel Inheritance
 
 class color:
     def __init__(s1,c):
-        s1.color=c
+        s1.ccolor=c
 
 class brand(color):
     def __init__(s2, c, b):
@@ -16,7 +16,12 @@ class car(brand):
     def getDetails(s3):
         print("Car type : ", s3.type)
         print("Brand is : ", s3.cbrand)
-        print("Color is : ", s3.color)
+        print("Color is : ", s3.ccolor)
 
-obj = car("Red", "TATA", "EV")
+
+t = input("Enter a type  : ")
+b = input("Enter a brand : ")
+c = input("Enter a color : ")
+print("-----------------------------------")
+obj = car(c, b, t)
 obj.getDetails()
