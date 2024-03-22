@@ -1,5 +1,3 @@
-# file having functions
-
 def readMarks():
     return (int(input("Enter a Marks : ")))
 def readName():

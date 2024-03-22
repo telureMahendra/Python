@@ -1,8 +1,25 @@
-""" Practical No.: 12. Write a program to demonstrate Calling function from another file """
-from functions import *
+#filename: functions.py
 
+def readMarks():
+    return (int(input("Enter a Marks : ")))
+def readName():
+    return (input("Enter a Student name : "))
+
+-----------------------------------------------
+#Filename: student.py
+
+from functions import *
 sname = readName()
 marks = readMarks()
-
 print("Name is : ", sname)
 print("Marks is : ", marks)
+
+"""
+Output:
+    Enter a Student name : Mahi
+    Enter a Marks : 45
+    Name is :  Mahi
+    Marks is :  45
+""" 
+
+
