@@ -2,6 +2,8 @@
 17: Create a list 10 elements. 
     Write a program to write this list in binary file and then 
     read it back to find out the smallest and largest value 
+    
+    using Exception handeling
 """
 def findSL(li):
     sm = li[0]
@@ -25,10 +27,15 @@ fp.close()
 try:
     fp1 = open("listFile.bin", "rb" )
     data = list(fp1.read())
+    
+    # using user defined function
+    findSL(data)
+
+    # using predefined functions
+    print("Smallest Element is : ", min(data))
+    print("Largest Element is : ", max(data))
 except FileNotFoundError:
     print("File Does Not Exists...") 
 
 
-print("Smallest Element is : ", min(data))
-print("Largest Element is : ", max(data))
-# findSL(data)
+

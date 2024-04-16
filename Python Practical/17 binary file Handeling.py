@@ -26,6 +26,9 @@ fp1 = open("listFile.bin", "rb" )
 data = list(fp1.read())
 # print(data)
 
+# using user defined function
+findSL(data)
+
+# using predefined functions
 print("Smallest Element is : ", min(data))
 print("Largest Element is : ", max(data))
-# findSL(data)
